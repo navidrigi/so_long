@@ -83,3 +83,11 @@ int	do_lines_have_same_length(t_data *data)
 	}
 	return (1);
 }
+
+void	initialize_some_data(t_data *data)
+{
+	data->collect_count = 0;
+	data->players = 0;
+	data->exits = 0;
+	data->collected = 0;
+}

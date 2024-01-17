@@ -109,6 +109,7 @@ int		are_borders_all_wall(t_data *data);
 int		are_all_characters_valid(t_data *data);
 int		is_number_of_characters_valid(t_data *data);
 int		do_lines_have_same_length(t_data *data);
+void	initialize_some_data(t_data *data);
 
 // read_map.c
 void	read_file(t_data *data, char *argv);

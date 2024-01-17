@@ -24,6 +24,7 @@ void	read_file(t_data *data, char *argv)
 	data->rows = get_height(argv);
 	data->columns = get_width(data, argv);
 	data->array = (char **) malloc(sizeof(char *) * (data->rows + 1));
+	initialize_some_data(data);
 	while (i < data->rows)
 		data->array[i++] = (char *) malloc(sizeof(char) * (data->columns + 1));
 	i = 0;
