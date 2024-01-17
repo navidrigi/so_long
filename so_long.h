@@ -22,7 +22,7 @@
 # include <stdbool.h>
 # include <errno.h>
 # include <fcntl.h>
-# include "minilibx/mlx.h"
+# include "mlx/mlx.h"
 # include "get_next_line.h"
 
 typedef struct s_data
