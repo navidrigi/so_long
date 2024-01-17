@@ -54,11 +54,11 @@ typedef struct {
     int y;
 } 	t_position;
 
-# define COLLECT	"/Users/narigi-e/Downloads/so_long/xpm/collect.xpm"
-# define EXIT		"/Users/narigi-e/Downloads/so_long/xpm/exit.xpm"
-# define PLAYER		"/Users/narigi-e/Downloads/so_long/xpm/player.xpm"
-# define WALL		"/Users/narigi-e/Downloads/so_long/xpm/wall.xpm"
-# define PATH		"/Users/narigi-e/Downloads/so_long/xpm/path.xpm"
+# define COLLECT	"/workspaces/so_long/xpm/collect.xpm"
+# define EXIT		"/workspaces/so_long/xpm/exit.xpm"
+# define PLAYER		"/workspaces/so_long/xpm/player.xpm"
+# define WALL		"/workspaces/so_long/xpm/wall.xpm"
+# define PATH		"/workspaces/so_long/xpm/path.xpm"
 
 enum
 {
@@ -89,6 +89,7 @@ void	map_invalid(t_data *data);
 // ft_itoa.c
 char	*ft_itoa(int n);
 void	copying_original_map(t_data *data);
+void	print_moves(t_data *data, int moves);
 
 // move_player.c
 bool	is_valid_move(t_data *data, int row, int col);
@@ -96,7 +97,6 @@ int		handle_player_movement(t_data *data, int key);
 void	saving_player_position(t_data *data, int row, int col);
 int		handle_key_press(int key, t_data *data);
 void	end_game(t_data *data);
-void	print_moves(t_data *data, int moves);
 
 // main.c
 void	put_xpm_to_print(t_data *data);
@@ -105,7 +105,6 @@ void	image_process(t_data *data, char *filename, int row, int col);
 void	game_start(t_data *data);
 
 // map_checking.c
-int		is_map_rectangular(t_data *data);
 int		are_borders_all_wall(t_data *data);
 int		are_all_characters_valid(t_data *data);
 int		is_number_of_characters_valid(t_data *data);
@@ -134,6 +133,4 @@ void    zero_all_elements(t_data *data);
 int		can_reach_element(t_data *data, int x, int y, char c);
 int		can_collect_all_collectibles(t_data *data);
 
-
 #endif
-

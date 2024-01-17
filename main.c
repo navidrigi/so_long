@@ -70,15 +70,15 @@ char	*character_checking(t_data *data, int row, int col)
 
 	file = NULL;
 	if (data->array[row / 64][col / 64] == 'C')
-		file = ft_strdupp("/Users/narigi-e/Downloads/so_long/xpm/collect.xpm");
+		file = ft_strdupp("/workspaces/so_long/xpm/collect.xpm");
 	else if (data->array[row / 64][col / 64] == 'E')
-		file = ft_strdupp("/Users/narigi-e/Downloads/so_long/xpm/exit.xpm");
+		file = ft_strdupp("/workspaces/so_long/xpm/exit.xpm");
 	else if (data->array[row / 64][col / 64] == 'P')
-		file = ft_strdupp("/Users/narigi-e/Downloads/so_long/xpm/player.xpm");
+		file = ft_strdupp("/workspaces/so_long/xpm/player.xpm");
 	else if (data->array[row / 64][col / 64] == '1')
-		file = ft_strdupp("/Users/narigi-e/Downloads/so_long/xpm/wall.xpm");
+		file = ft_strdupp("/workspaces/so_long/xpm/wall.xpm");
 	else if (data->array[row / 64][col / 64] == '0')
-		file = ft_strdupp("/Users/narigi-e/Downloads/so_long/xpm/path.xpm");
+		file = ft_strdupp("/workspaces/so_long/xpm/path.xpm");
 	return (file);
 }
 

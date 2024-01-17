@@ -41,8 +41,7 @@ int	is_argument_valid(char *argv)
 
 int	is_map_valid(t_data *data)
 {
-	if (is_map_rectangular(data) && are_borders_all_wall(data)
-		&& is_number_of_characters_valid(data)
+	if (are_borders_all_wall(data) && is_number_of_characters_valid(data)
 		&& are_all_characters_valid(data) && do_lines_have_same_length(data)
 		&& is_collectible_reachable(data)
 		&& can_collect_all_collectibles(data))

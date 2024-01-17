@@ -12,13 +12,6 @@
 
 #include "so_long.h"
 
-int	is_map_rectangular(t_data *data)
-{
-	if (data->rows == data->columns)
-		return (0);
-	return (1);
-}
-
 int	are_borders_all_wall(t_data *data)
 {
 	int	i;
