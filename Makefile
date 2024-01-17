@@ -8,10 +8,12 @@ OBJ_DIR     =   obj
 OBJ_FILES 	=	$(addprefix $(OBJ_DIR)/, $(SRC_FILES:.c=.o))
 NAME		=	so_long
 
-all: $(NAME)
+all: $(OBJ_DIR) $(NAME)
+
+$(OBJ_DIR):
+	mkdir -p $(OBJ_DIR)
 
 $(OBJ_DIR)/%.o: %.c
-	mkdir -p $(OBJ_DIR)
 	$(CC) $(CFLAGS) -Imlx -c $< -o $@
 
 $(NAME): $(OBJ_FILES)
